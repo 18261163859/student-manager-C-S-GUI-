@@ -1,7 +1,9 @@
 package com.smx.sm.factory;
 
 import com.smx.sm.dao.AdminDao;
+import com.smx.sm.dao.DepartmentDao;
 import com.smx.sm.dao.impl.AdminDaoImpl;
+import com.smx.sm.dao.impl.DepartmentDaoImpl;
 
 /**
  * @ClassName DaoFactory
@@ -17,4 +19,10 @@ public class DaoFactory {
     public static AdminDao getAdminDaoInstance(){
         return new AdminDaoImpl();
     }
+
+    /**
+     * 获取DepartmentDao实例
+     * @return
+     */
+    public static DepartmentDao getDepartmentDaoInstance(){ return new DepartmentDaoImpl(); }
 }

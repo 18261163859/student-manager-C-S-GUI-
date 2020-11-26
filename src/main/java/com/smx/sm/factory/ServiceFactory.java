@@ -1,7 +1,9 @@
 package com.smx.sm.factory;
 
 import com.smx.sm.service.AdminService;
+import com.smx.sm.service.DepartmentService;
 import com.smx.sm.service.impl.AdminServiceImpl;
+import com.smx.sm.service.impl.DepartmentServiceImpl;
 
 /**
  * @ClassName ServiceFactory
@@ -14,4 +16,7 @@ public class ServiceFactory {
         return new AdminServiceImpl();
     }
 
+    public static DepartmentService getDepartmentServiceInstance(){
+        return new DepartmentServiceImpl();
+    }
 }

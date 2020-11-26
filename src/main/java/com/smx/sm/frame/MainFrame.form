@@ -99,7 +99,59 @@
               <background color="-14805439"/>
             </properties>
             <border type="none"/>
-            <children/>
+            <children>
+              <grid id="413c9" layout-manager="BorderLayout" hgap="10" vgap="0">
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ed0c5" class="javax.swing.JComboBox" binding="depComboBox">
+                    <constraints border-constraint="West"/>
+                    <properties/>
+                  </component>
+                  <component id="6f5b9" class="javax.swing.JTextField" binding="searchField">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                  </component>
+                  <component id="af070" class="javax.swing.JButton" binding="新增班级Button">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <text value="新增班级"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <splitpane id="cc089">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="5e01e" binding="treePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                  <scrollpane id="80c12">
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="49c69" binding="classContentPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints/>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                </children>
+              </splitpane>
+            </children>
           </grid>
           <grid id="beb3" binding="studentPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints>

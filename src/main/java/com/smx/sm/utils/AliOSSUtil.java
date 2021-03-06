@@ -19,11 +19,11 @@ public class AliOSSUtil {
      * @return String 上传返回url
      */
     public static String ossUpload(File file){
-        String bucketDomain="http://s-moses.oss-cn-hangzhou.aliyuncs.com/";
-        String  endpoint="http://oss-cn-hangzhou.aliyuncs.com";
-        String accessKeyId="LTAI4GC8ATVWk3uYsP6srDt1";
-        String accessKeySecret="PLdX8P5qgWumrjmGP0GutVwEW8lonw";
-        String bucketName="s-moses";
+        String bucketDomain="*********************";
+        String  endpoint="*********************";
+        String accessKeyId="*********************";
+        String accessKeySecret="*********************";
+        String bucketName="*********************";
         String fileDir="logo/";
         String  fileName=file.getName();
         String fileKey= UUID.randomUUID().toString()+fileName.substring(fileName.indexOf("."));
